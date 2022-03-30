@@ -1,0 +1,2 @@
+python Cliente.py
+pause
