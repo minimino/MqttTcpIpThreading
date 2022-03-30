@@ -11,7 +11,7 @@ The videocalls were implemented using TCP sockets through the *multiprocessing.c
 4. The data is sent in packets of equal size to the other users
 5. The other users unpack the data and show it on screen
 
-Similar procedures were used for the other components (whiteboard, chat, Bomberman...), except that in those cases the packets had constant size, so step 3 is skipped. Of course, this needed a server which handled all communications between clients and allowed logging in.
+Similar procedures were used for the other components (whiteboard, chat, Bomberman...), except that in those cases the packets had constant size, so step 3 is skipped. Of course, this needed a server which handled all communications between clients and allowed logging in, for which it was essential to use multiprocessing (process-based parallelism)
 
 ## Pong
 
